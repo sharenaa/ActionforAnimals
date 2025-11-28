@@ -1,1 +1,114 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  font-size: 32px;
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+  font-weight: bold;
+}
+.logo .action {
+  color: #89ce9a;
+  font-family: "Istok Web", sans-serif;
+  font-size: 40px;
+}
+.logo .for {
+  color: #555;
+  font-family: "Italianno", cursive;
+  font-size: 46px;
+  font-weight: 400;
+}
+.logo .animals {
+  color: #66aaee;
+  font-family: "Istok Web", sans-serif;
+  font-size: 40px;
+}
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #66aaee;
+}
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+.c1 {
+  width: 350px;
+  height: 350px;
+  background: #c1e9df;
+  top: -80px;
+  left: -120px;
+}
+.c2 {
+  width: 420px;
+  height: 420px;
+  background: #cce5ff;
+  top: 150px;
+  right: -160px;
+}
+.hero {
+  text-align: center;
+  padding: 120px 20px 80px;
+  position: relative;
+}
+.hero img.dog {
+  width: 260px;
+}
+.buttons {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.buttons a {
+  padding: 14px 32px;
+  background: #89ce9a;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.buttons a:hover {
+  background: #66aaee;
+}
+.page-section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+.page-section h1 {
+  font-size: 40px;
+  color: #66aaee;
+  margin-bottom: 20px;
+}
+.page-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
 
