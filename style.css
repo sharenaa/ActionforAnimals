@@ -1,11 +1,11 @@
 /* General Setup */
 body {
-  margin: 0;
-  font-family: "Rubik", sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  overflow-x: hidden;
-  position: relative;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    overflow-x: hidden;
+    position: relative;
 }
 
 /* --- Typography and Colors --- */
@@ -15,370 +15,384 @@ body {
 
 /* --- Logo Styling --- */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-  background: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
 }
 .logo {
-  font-size: 32px;
-  display: flex;
-  gap: 6px;
-  align-items: baseline;
-  font-weight: bold;
+    font-size: 32px;
+    display: flex;
+    gap: 6px;
+    align-items: baseline;
+    font-weight: bold;
 }
 .logo .action {
-  font-family: "Istok Web", sans-serif;
-  font-size: 40px;
+    font-family: "Istok Web", sans-serif;
+    font-size: 40px;
 }
 .logo .for {
-  font-family: "Italianno", cursive;
-  font-size: 46px;
-  font-weight: 400;
+    font-family: "Italianno", cursive;
+    font-size: 46px;
+    font-weight: 400;
 }
 .logo .animals {
-  font-family: "Istok Web", sans-serif;
-  font-size: 40px;
+    font-family: "Istok Web", sans-serif;
+    font-size: 40px;
 }
 
 /* --- Header Navigation --- */
 nav a {
-  margin-left: 30px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  transition: 0.3s;
-  position: relative;
-  padding: 5px 0;
+    margin-left: 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+    position: relative;
+    padding: 5px 0;
 }
 nav a:hover, nav a.active {
-  color: #66aaee;
+    color: #66aaee;
 }
-/* Underline for the active link in the mockup */
 nav a.active::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 100%;
-  height: 2px;
-  background-color: #66aaee;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: #66aaee;
 }
 
 /* --- Background Circles (The abstract design) --- */
 .circle {
-  position: absolute;
-  border-radius: 50%;
-  z-index: -1;
-  opacity: 0.8;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.8;
 }
-/* Top Left Light Blue-Green */
 .c1 {
-  width: 450px;
-  height: 450px;
-  background: #c1e9df; 
-  top: 80px;
-  left: 180px;
+    width: 450px;
+    height: 450px;
+    background: #c1e9df; 
+    top: 80px;
+    left: 180px;
 }
-/* Top Right Light Blue */
 .c2 {
-  width: 400px;
-  height: 400px;
-  background: #cce5ff; 
-  top: -100px;
-  right: 0px;
+    width: 400px;
+    height: 400px;
+    background: #cce5ff; 
+    top: -100px;
+    right: 0px;
 }
-/* Mid Left Light Green */
 .c3 {
-  width: 300px;
-  height: 300px;
-  background: #c1e9df;
-  top: 350px;
-  left: -100px;
+    width: 300px;
+    height: 300px;
+    background: #c1e9df;
+    top: 350px;
+    left: -100px;
 }
-/* Mid Right Light Blue (Large one behind icons) */
 .c4 {
-  width: 650px;
-  height: 650px;
-  background: #cce5ff;
-  top: 350px;
-  right: -150px;
-  opacity: 0.7;
+    width: 650px;
+    height: 650px;
+    background: #cce5ff;
+    top: 350px;
+    right: -150px;
+    opacity: 0.7;
 }
-/* Bottom Left Light Green (Behind Donate section) */
 .c5 {
-  width: 450px;
-  height: 450px;
-  background: #c1e9df;
-  top: 1250px;
-  left: -100px;
+    width: 450px;
+    height: 450px;
+    background: #c1e9df;
+    top: 1250px;
+    left: -100px;
 }
-/* Bottom Right Light Blue */
 .c6 {
-  width: 250px;
-  height: 250px;
-  background: #cce5ff;
-  top: 1100px;
-  right: 100px;
+    width: 250px;
+    height: 250px;
+    background: #cce5ff;
+    top: 1100px;
+    right: 100px;
 }
 
 /* --- Hero Section (Top area with the dog and big buttons) --- */
 .hero {
-  text-align: center;
-  padding: 50px 20px 0; /* Reduced top padding */
-  position: relative;
-  min-height: 450px; /* Ensure space for the dog placeholder */
+    text-align: center;
+    padding: 50px 20px 0;
+    position: relative;
+    min-height: 450px;
 }
-/* Dog Placeholder (Replacing the dog image) */
+/* Dog Placeholder */
 .dog-placeholder {
-  width: 260px;
-  height: 260px;
-  margin: 0 auto 30px;
-  background-color: #eee; /* Placeholder color */
-  border-radius: 50%;
-  border: 10px solid #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  right: 15%;
-  top: 100px;
-  z-index: 5;
+    width: 260px;
+    height: 260px;
+    margin: 0 auto 30px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 15%;
+    top: 100px;
+    z-index: 5;
 }
 
+/* --- Hero Action Buttons and Hover/Expand Effect --- */
 .hero-actions {
-  margin-top: 35px;
-  display: flex;
-  justify-content: flex-start; /* Aligned left on the page */
-  flex-wrap: nowrap;
-  gap: 10px;
-  padding-left: 50px;
-  position: absolute;
-  top: 250px;
-  left: 0;
-  width: 100%;
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding-left: 50px;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    width: 100%;
 }
 .btn-primary {
-  padding: 18px 30px;
-  border-radius: 15px;
-  color: #333;
-  font-weight: 700;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 14px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
-  min-width: 130px;
-  text-align: center;
+    padding: 18px 30px;
+    border-radius: 15px;
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    /* Added transform transition for smooth expansion */
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    min-width: 130px;
+    text-align: center;
 }
-.reserve { background: #cce5ff; } /* Light Blue */
-.foster { background: #c1e9df; } /* Light Green-Blue */
-.adopt { background: #cce5ff; } /* Light Blue */
-.volunteer { background: #c1e9df; } /* Light Green-Blue */
+.reserve { background: #cce5ff; } 
+.foster { background: #c1e9df; } 
+.adopt { background: #cce5ff; } 
+.volunteer { background: #c1e9df; } 
 
-/* Hover effects */
 .btn-primary:hover {
-  opacity: 0.8;
-  transform: translateY(-2px);
+    transform: scale(1.05); /* Expands the button */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
+.reserve:hover { background: #b0d8ff; } 
+.foster:hover { background: #a8e0d4; } 
+.adopt:hover { background: #b0d8ff; } 
+.volunteer:hover { background: #a8e0d4; }
+
 
 /* --- Our Initiative Section --- */
 .initiative {
-  padding: 50px 50px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin-top: 100px; /* Push down after hero section */
+    padding: 50px 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
 .carousel-nav {
-  position: absolute;
-  left: 50px;
-  right: 50px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: space-between;
-  pointer-events: none; /* Allows clicks to pass through */
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
 }
 .carousel-nav i {
-  font-size: 24px;
-  color: #66aaee;
-  pointer-events: auto;
-  cursor: pointer;
+    font-size: 24px;
+    color: #66aaee;
+    pointer-events: auto;
+    cursor: pointer;
 }
 .initiative-content-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 1100px;
 }
 .card-placeholder {
-  width: 100%;
-  height: 250px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  background-color: #eee;
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #eee;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 .card-placeholder.left, .card-placeholder.right {
-  background-color: #ddd; /* Darker placeholder for side images */
+    background-color: #ddd;
 }
 .card-placeholder.center {
-  background-color: #fff; /* White background for text card */
-  text-align: left;
+    background-color: #fff;
+    text-align: left;
 }
 .initiative-title {
-  color: #66aaee;
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  text-align: center;
+    color: #66aaee;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
 }
 .card-placeholder.center p {
-  font-size: 14px;
-  line-height: 1.5;
-  color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
 }
 
-/* --- Quick Links / Icons Section --- */
+/* --- Quick Links / Icons Section (Horizontal Layout Applied) --- */
 .quick-links {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 50px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+    z-index: 5;
 }
 .link-item {
-  max-width: 150px;
-  text-align: center;
-  padding: 15px;
-  position: relative;
-  z-index: 2;
+    max-width: 180px; 
+    min-width: 150px; 
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+.link-item:hover {
+    background-color: rgba(204, 229, 255, 0.4);
 }
 .link-item h4 {
-  color: #333;
-  margin: 10px 0 5px;
-  font-weight: 700;
+    color: #333;
+    margin: 10px 0 5px;
+    font-weight: 700;
 }
 .link-item p {
-  font-size: 12px;
-  color: #555;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #555;
 }
 .icon-bg {
-  font-size: 40px;
-  color: #66aaee; /* Icon color */
-  background-color: #fff;
-  border-radius: 50%;
-  padding: 10px;
-  display: inline-block;
+    font-size: 20px;
+    color: #66aaee;
+    background-color: #fff;
+    border: 1px solid #cce5ff;
+    border-radius: 50%;
+    padding: 15px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 /* --- Donate to Save Section --- */
 .donate-save {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  padding: 100px 50px;
-  position: relative;
-  overflow: hidden; /* Contains the floating circles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 50px;
+    position: relative;
+    overflow: hidden;
 }
 .donate-text-content {
-  max-width: 400px;
-  text-align: left;
-  position: relative;
-  z-index: 3;
+    max-width: 400px;
+    text-align: left;
+    position: relative;
+    z-index: 3;
 }
 .donate-text-content h3 {
-  color: #333;
-  font-size: 30px;
-  margin-bottom: 15px;
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 15px;
 }
 .donate-text-content p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
 }
 .btn-contact {
-  display: inline-block;
-  padding: 10px 25px;
-  margin-top: 20px;
-  border: 2px solid #89ce9a;
-  background-color: transparent;
-  color: #89ce9a;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: 0.3s;
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 20px;
+    border: 2px solid #89ce9a;
+    background-color: transparent;
+    color: #89ce9a;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 .btn-contact:hover {
-  background-color: #89ce9a;
-  color: #fff;
+    background-color: #89ce9a;
+    color: #fff;
 }
 .donate-img-placeholder {
-  background-color: #ddd;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 2;
+    background-color: #ddd;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
 }
 .cat-dog-group {
-  width: 180px;
-  height: 180px;
-  transform: translateX(-20px);
+    width: 180px;
+    height: 180px;
+    transform: translateX(-20px);
 }
 .dog-single {
-  width: 150px;
-  height: 150px;
-  transform: translateX(-100px);
+    width: 150px;
+    height: 150px;
+    transform: translateX(-100px);
 }
 
 /* --- CTA Banner (Footer) --- */
 .cta-banner {
-  background-color: #333;
-  padding: 80px 50px;
-  text-align: center;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
+    background-color: #333;
+    padding: 80px 50px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
 }
 .cta-content {
-  position: relative;
-  z-index: 5;
+    position: relative;
+    z-index: 5;
 }
 .cta-banner h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 .cta-banner p {
-  font-size: 16px;
-  margin-bottom: 25px;
-  color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: rgba(255, 255, 255, 0.8);
 }
 .btn-cta {
-  display: inline-block;
-  padding: 12px 30px;
-  background-color: #89ce9a;
-  color: #fff;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 20px;
-  transition: 0.3s;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #89ce9a;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s;
 }
 .btn-cta:hover {
-  background-color: #66aaee;
+    background-color: #66aaee;
 }
